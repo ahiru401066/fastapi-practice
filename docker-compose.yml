@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./
+    image: fastapi-image
+    container_name: fastapi-container 
+    tty: true
+    volumes:
+      - ./backend:/app/backend
+    ports:
+      - "8000:8000"
